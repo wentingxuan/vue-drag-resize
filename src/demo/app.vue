@@ -16,11 +16,11 @@
                            :isDraggable="rect.draggable"
                            :isResizable="rect.resizable"
                            :parentLimitation="rect.parentLim"
-                           :snapToGrid="rect.snapToGrid"
+                           :snapToGrid="true"
                            :aspectRatio="rect.aspectRatio"
                            :z="rect.zIndex"
                            v-on:activated="activateEv(index)"
-                           v-on:deactivated="deactivateEv(index)"
+                           v-on:deactivated="deactivateEv(index)" 
                            v-on:dragging="changePosition($event, index)"
                            v-on:resizing="changeSize($event, index)"
             >
